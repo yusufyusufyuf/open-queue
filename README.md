@@ -1,6 +1,6 @@
 # OpenCode Message Queue Plugin
 
-[queue-power.svg](assets/queue-power.svg)
+![queue-power.svg](assets/queue-power.svg)
 
 Tiny plugin that controls how user messages behave while a session is running.
 
