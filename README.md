@@ -19,10 +19,7 @@ I can't fix that yet, but the functionality does work the model won't see the 2n
 
 ## Installation
 
-### From npm
-
 ```bash
-# In your project's .opencode directory
 cd .opencode
 bun add @0xsero/open-queue
 ```
@@ -39,23 +36,6 @@ Optionally, copy the slash command to your project:
 
 ```bash
 cp node_modules/@0xsero/open-queue/command/queue.md .opencode/command/
-```
-
-### From source
-
-Clone this repo and run OpenCode directly:
-
-```bash
-git clone https://github.com/0xSero/@0xsero/open-queue.git
-cd @0xsero/open-queue
-opencode
-```
-
-Or copy `.opencode/` to your project:
-
-```bash
-cp -r @0xsero/open-queue/.opencode your-project/
-cd your-project/.opencode && bun install
 ```
 
 ## Usage
@@ -133,13 +113,11 @@ When in `immediate` mode:
 - **Global mode**: The mode is global across all sessions. Per-session mode could be added if needed.
 - **Plugin scope**: Queued messages are lost if OpenCode restarts.
 
-## Publishing
+## Links
 
-```bash
-# Build and publish
-bun run build
-npm publish
-```
+- [GitHub Repository](https://github.com/0xSero/open-queue)
+- [npm Package](https://www.npmjs.com/package/@0xsero/open-queue)
+- [Report Issues](https://github.com/0xSero/open-queue/issues)
 
 ## License
 
