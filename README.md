@@ -14,23 +14,13 @@ When you send a message while OpenCode is running:
 
 ## Install
 
-Add to your `opencode.json`:
-
-```json
-{
-  "plugin": ["@0xsero/open-queue"]
-}
-```
-
-OpenCode auto-installs plugins from npm. Or install manually:
-
 ```bash
-bun add @0xsero/open-queue
+bunx @0xsero/open-queue
 ```
+
+This adds the plugin to your `opencode.json` and sets up the `/queue` command.
 
 ## Usage
-
-By default, messages send immediately (normal behavior). To start queueing:
 
 ```
 /queue hold       # Queue messages until model is done
