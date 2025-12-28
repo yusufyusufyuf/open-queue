@@ -22,7 +22,11 @@ Add to your `opencode.json`:
 }
 ```
 
-That's it. OpenCode auto-installs plugins from npm.
+OpenCode auto-installs plugins from npm. Or install manually:
+
+```bash
+bun add @0xsero/open-queue
+```
 
 ## Usage
 
