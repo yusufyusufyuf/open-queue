@@ -15,7 +15,8 @@ When you send a message while OpenCode is running:
 ## Install
 
 ```bash
-npx @0xsero/open-queue
+bun x @0xsero/open-queue
+# or: npx @0xsero/open-queue
 ```
 
 This adds the plugin to your `opencode.json` and sets up the `/queue` command.
